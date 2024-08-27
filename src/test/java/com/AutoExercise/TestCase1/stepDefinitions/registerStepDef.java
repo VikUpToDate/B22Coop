@@ -1,4 +1,4 @@
-package com.AutoExercise.TestCase1.stepDefenitions;
+package com.AutoExercise.TestCase1.stepDefinitions;
 
 import com.AutoExercise.TestCase1.pages.*;
 import io.cucumber.java.en.And;
@@ -6,7 +6,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import utils.BrowserUtils;
 import utils.ConfigReader;
 import utils.DriverHelper;
 
