@@ -1,13 +1,26 @@
 package com.AutoExercise.testCase2.stepDef;
 
+import com.AutoExercise.testCase2.pages.LoggedPage;
+import com.AutoExercise.testCase2.pages.LoginPage;
+import com.AutoExercise.testCase2.pages.MainPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.WebDriver;
+import utils.ConfigReader;
+import utils.DriverHelper;
 
 public class stepDef {
+
+    WebDriver driver = DriverHelper.getDriver();
+
+    MainPage mainPage = new MainPage(driver);
+    LoginPage loginPage = new LoginPage(driver);
+    LoggedPage loggedPage = new LoggedPage(driver);
 
 
     @Given("user navigates to web page")
     public void user_navigates_to_web_page() {
+        driver.get(ConfigReader.readProperty("autoExMainURL"));
 
     }
     @Given("user validates home page is visible")
