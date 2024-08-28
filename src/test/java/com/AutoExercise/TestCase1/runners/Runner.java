@@ -18,7 +18,8 @@ import java.io.IOException;
         features = "src/test/resources/automationExercise/TestCase1", // path to feature file/cucumber file
         glue = "com/AutoExercise/TestCase1/stepDefinitions", // path to stepDef
         dryRun = false, // if this is set to true, it will generate snippets if step definition is not defined yet
-        plugin = {"pretty", "html:target/cucumber-reports.html"}
+        plugin = {"pretty", "html:target/cucumber-reports.html", "rerun:target/uiFailedTest.txt"},
+        tags = "@usualTest"
 )
 public class Runner {
     @AfterClass
