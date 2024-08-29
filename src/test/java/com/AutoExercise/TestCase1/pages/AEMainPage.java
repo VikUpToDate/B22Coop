@@ -19,6 +19,7 @@ public class AEMainPage {
 
     public void clickOnRegistrationBtn(){
         BrowserUtils.click(this.registrationBtn, driver);
+        System.out.println("code from Kobe");
     }
 
 }
