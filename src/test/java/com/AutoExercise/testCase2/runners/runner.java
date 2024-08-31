@@ -1,8 +1,7 @@
-package com.AutoExercise.testCase2;
+package com.AutoExercise.testCase2.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import org.checkerframework.checker.units.qual.C;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
